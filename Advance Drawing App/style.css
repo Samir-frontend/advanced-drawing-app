@@ -1,0 +1,22 @@
+body{
+text-align:center;
+font-family:Arial;
+background:#111;
+color:white;
+}
+
+canvas{
+border:2px solid white;
+background:white;
+cursor:crosshair;
+}
+
+.tools{
+margin:10px;
+}
+
+button{
+padding:6px 10px;
+margin:4px;
+cursor:pointer;
+}
