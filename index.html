@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Advanced Drawing App</title>
+<style>
+
+body{
+text-align:center;
+font-family:Arial;
+background:#111;
+color:white;
+}
+
+canvas{
+border:2px solid white;
+background:white;
+cursor:crosshair;
+}
+
+.tools{
+margin:10px;
+}
+
+button{
+padding:6px 10px;
+margin:4px;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Advanced Drawing App</h1>
+
+<div class="tools">
+
+<input type="color" id="colorPicker">
+
+<input type="range" id="brushSize" min="1" max="20" value="3">
+
+<button onclick="setTool('brush')">Brush</button>
+<button onclick="setTool('eraser')">Eraser</button>
+<button onclick="setTool('rect')">Rectangle</button>
+<button onclick="setTool('circle')">Circle</button>
+
+<button onclick="undo()">Undo</button>
+<button onclick="clearCanvas()">Clear</button>
+<button onclick="downloadImage()">Download</button>
+
+</div>
+
+<br>
+
+<canvas id="canvas"></canvas>
+
+<script src="script.js"></script>
+
+</body>
+</html>
